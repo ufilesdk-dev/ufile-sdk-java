@@ -8,7 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.http.util.MimeMap;
+import cn.ucloud.ufile.util.MimeMap;
+
 
 public class UFileRequest implements Cloneable {
 	

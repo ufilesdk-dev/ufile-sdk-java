@@ -1,4 +1,4 @@
-package org.apache.http.util;
+package cn.ucloud.ufile.util;
 
 import java.io.IOException;
 import java.io.InputStream;
