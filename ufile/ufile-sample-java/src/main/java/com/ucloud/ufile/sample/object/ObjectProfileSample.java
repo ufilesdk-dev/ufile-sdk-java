@@ -27,10 +27,6 @@ public class ObjectProfileSample {
         UfileClient.object(Constants.OBJECT_AUTHORIZER, config)
                 .objectProfile(keyName, bucketName)
                 .executeAsync(new UfileCallback<ObjectProfile>() {
-                    @Override
-                    public void onProgress(long bytesWritten, long contentLength) {
-                        JLog.D(TAG, String.format("[progress] = %d%% - [%d/%d]", (int) (bytesWritten * 1.f / contentLength * 100), bytesWritten, contentLength));
-                    }
 
                     @Override
                     public void onResponse(ObjectProfile response) {
