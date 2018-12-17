@@ -26,7 +26,6 @@ public class PutObjectSample {
     private static ObjectConfig config = new ObjectConfig("your bucket region", "ufileos.com");
 
     public static void main(String[] args) {
-        File file = new File("your file path");
         InputStream is = new ByteArrayInputStream(new byte[]{0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07});
         String mimeType = "mimeType";
         String keyName = "which";
