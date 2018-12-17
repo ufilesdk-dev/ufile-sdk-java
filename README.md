@@ -9,11 +9,9 @@
 
 ## 安装
 - Maven
-
     暂未提交Maven仓库
 
 - JCenter
-
     暂未提交JCenter仓库
 
 ## 快速入门
@@ -23,7 +21,7 @@
     
     - 同步执行会返回指定的业务结果类，若执行出错则会抛出UfileException为父类的异常；
     
-    - 异步执行需要传入UfileCallback<T>的回调接口，执行成功时会回调onResponse，泛型<T>为回调结果(即：同步执行的返回类型)，==值得注意的是，若Ufile Server业务错误，也会回调onResponse，请注意结果类中的信息==，若出现异常，则回调onError。
+    - 异步执行需要传入UfileCallback<T>的回调接口，执行成功时会回调onResponse，泛型<T>为回调结果(即：同步执行的返回类型)，**值得注意的是，若Ufile Server业务错误，也会回调onResponse，请注意结果类中的信息**，若出现异常，则回调onError。
     
     - 如果是上传下载等耗时API，建议使用异步执行(executeAsync)，并可以重写UfileCallback中的onProgress回调来进行进度监听
 
