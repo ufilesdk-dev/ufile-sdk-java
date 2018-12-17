@@ -70,13 +70,14 @@ public class MultiUploadSample {
                 MultiUploadResponse finishRes = UfileClient.object(Constants.OBJECT_AUTHORIZER, config)
                         .finishMultiUpload(state, partStates)
                         .execute();
-                JLog.T(TAG, "finish->" + finishRes.toString());
+                JLog.D(TAG, "finish->" + finishRes.toString());
             } catch (ExecutionException e) {
                 e.printStackTrace();
+                // 若上传任一分片未成功，则须执行中断上传，然后从init开始从新上传
                 BaseResponseBean abortRes = UfileClient.object(Constants.OBJECT_AUTHORIZER, config)
                         .abortMultiUpload(state)
                         .execute();
-                JLog.T(TAG, "abort->" + abortRes.toString());
+                JLog.D(TAG, "abort->" + abortRes.toString());
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
