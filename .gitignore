@@ -1,1 +1,7 @@
 *.DS_Store
+out
+target
+.gradle
+.idea
+build
+*.iml
