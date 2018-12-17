@@ -10,10 +10,10 @@ import com.ucloud.ufile.auth.UfileObjectLocalAuthorization;
  */
 public class Constants {
     public static final UfileBucketLocalAuthorization BUCKET_AUTHORIZER = new UfileBucketLocalAuthorization(
-            "Kf6owXtNZSimr0rR7w9ew6Iclm1w73QB8+jUkiV7hXgBYtV5BNWN1LlNUko=",
-            "9K91tK7hcpCFL+90HwVk8lGUwJrqqjzfUouDD47RLrs9f1Umt4gXx7LWwB4kE7um");
+            "your publick key",
+            "your private key");
 
     public static final UfileObjectLocalAuthorization OBJECT_AUTHORIZER = new UfileObjectLocalAuthorization(
-            "Kf6owXtNZSimr0rR7w9ew6Iclm1w73QB8+jUkiV7hXgBYtV5BNWN1LlNUko=",
-            "9K91tK7hcpCFL+90HwVk8lGUwJrqqjzfUouDD47RLrs9f1Umt4gXx7LWwB4kE7um");
+            "your publick key",
+            "your private key");
 }
