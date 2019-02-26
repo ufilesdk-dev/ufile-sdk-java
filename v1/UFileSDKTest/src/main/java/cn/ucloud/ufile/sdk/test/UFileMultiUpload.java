@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 public class UFileMultiUpload {
     public static final int CONCURRENT_COUNT = 3;
     public static final String bucketName = "lapd";
-    public static final String baseurl = "http://douxiang.ufile.ucloud.com.cn/";
+    public static final String baseurl = "http://douxiang.cn-bj.ufileos.com/";
 
     private static int calPartCount(String filePath, int partSize) {
         File file = new File(filePath);
